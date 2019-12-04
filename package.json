@@ -4,10 +4,14 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "node-dev index.js"
+    "satrt": "NODE_ENV=production node -r esm index.js",
+    "dev": "NODE_ENV=development node-dev -r esm index.js"
   },
   "dependencies": {
-    "apollo-server": "^2.9.12",
-    "graphql": "^14.5.8"
+    "apollo-server-express": "^2.9.12",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "graphql": "^14.5.8",
+    "mongoose": "^5.7.13"
   }
 }
